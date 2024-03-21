@@ -16,7 +16,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}></Route>
       </Routes>
       </BrowserRouter> */}
-      <AddCenter/>
+      <Home/>
       {/* <SubmitRequest/> */}
     </div>
   );
