@@ -8,6 +8,10 @@
   width: 100%;
   margin: auto;
 }
+.admin-button{
+  display: flex;
+  justify-content: center;
+}
 .container > form {
   width: 70%;
   border: 1px solid;
@@ -30,6 +34,55 @@
   box-sizing: border-box;
   margin-bottom: 30px;
 }
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  color: rgb(16, 16, 16);
+  padding: 0px 20px;
+  border: 1px solid black;
+  
+  }
+  
+  .navbar-logo {
+  font-size: 1.5rem;
+padding-right: 500px;
+  }
+  
+  .navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+  
+  .navbar-links a {
+  color: rgba(17, 16, 16, 0.9);
+  text-decoration: none;
+  padding-left: 50px;
+  margin-right: 20px; /* Adjust spacing between links */
+  }
+  .glyphicon{
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  @media (max-width: 768px) {
+  .navbar-links {
+  display: none;
+  }
+  }
+  
+  @media (max-width: 768px) {
+  .navbar {
+  flex-direction: row-reverse;
+  }
+  
+  .navbar-toggle {
+  order: -1;
+  }
+  }
+
 
 .form-floating label {
   position: absolute;

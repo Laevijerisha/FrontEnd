@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 function Login() {
     return (
         <div class='container'>
@@ -15,8 +15,10 @@ function Login() {
   <input type="password" class="form-control" id="pwd"  name="pswd"/>
   <label htmlFor="pwd">Password</label>
 </div>
-<div class="form-floating ">
+<div class="footer">
+    
 <button class="btn btn-primary">Login</button>
+<NavLink to='/signup'style={{display:'flex',justifyContent:'flex-end'}}>Don't Have an account? Signup!</NavLink>
 </div>
             </form>
             
